@@ -27,7 +27,7 @@ const requestHandler = (req, res) => {
                     </body>`);
         res.write('</html>');
         
-        res.end();  
+       return res.end();  
     }
     if(req.url === '/create-user' && req.method === 'POST') {
         const body = [];
